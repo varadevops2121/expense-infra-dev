@@ -2,12 +2,12 @@ terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      version = "5.62.0"
+      version = "5.48.0"
     }
   }
   backend "s3" {
-    bucket = "varadaws78s-remote-state"
-    key    = "expense-dev-db"
+    bucket = "varadaws78s-remote-state" 
+    key    = "expense-dev-frontend"
     region = "us-east-1"
     dynamodb_table = "varadaws78s-locking"
   }
